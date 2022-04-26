@@ -1,0 +1,278 @@
+:root {
+  --dark-brown-color: #30271c;
+  --light-brown-color: #c7a17a;
+  --white-color: #fff;
+  --paragraph-color: #666666;
+  --light-grey-color: #aca9ac;
+  --light-beige-color: #eae7de;
+  --sponser-color: #f5f5f5;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+
+/* ----------------------------------------------------------------------------  */
+
+/* Header - Logo & Navigationbar */
+
+.hero__navigationbar .hero__navigation--list .hero__navigation--links .current  {
+  color: var(--light-brown-color);
+}
+
+.hero__navigationbar .hero__navigation--list .hero__navigation--links a:hover {
+  color: var(--light-brown-color);
+}
+
+/* Header - Button*/
+
+.hero__div--secondary .btn__menu:hover {
+  border: 0.3rem solid var(--light-brown-color);
+  background-color: var(--light-brown-color);
+  color: var(--white-color);
+}
+
+.hero__div--secondary .btn__menu:active {
+  background-color: transparent;
+  border: 0.3rem solid var(--light-brown-color);
+  color: var(--white-color);
+}
+
+.hero__div--secondary .btn__menu:focus {
+  outline: none;
+}
+
+
+/* ----------------------------------------------------------------------------  */
+
+/* Other Links But Home - Header Location */
+
+.hero__div--secondary .cursive a:hover {
+  color: var(--light-grey-color);
+}
+
+
+/* ----------------------------------------------------------------------------  */
+
+/* Home - Grid Links  - Arrow right */
+
+.grid-links .card__link:hover .fas {
+  transform: perspective(100rem) translateX(1rem);
+  transition: all 0.3s ease;
+}
+
+/* Home - Sponser */
+
+.sponser .sponser-brand:hover {
+  transform: perspective(100rem) translateY(-1rem);
+}
+
+
+/* ----------------------------------------------------------------------------  */
+
+/* Blog - Curvise & Sidebar*/
+
+
+.blog .blog-post__card .cursive:hover {
+  color: var(--paragraph-color);
+}
+
+.meta__text:hover,
+.archives__text:hover,
+.popular-categories__text:hover {
+  color: var(--light-brown-color);
+}
+
+
+/* ----------------------------------------------------------------------------  */
+
+
+/* About - Team Member - Waiter */
+
+.team .team-member .waiter .waiter__social .fa-facebook-f:hover {
+  color: #4267b2;
+}
+
+.team .team-member .waiter .waiter__social .fa-hashtag:hover {
+  color: #c13584;
+}
+
+
+.team .team-member .waiter .waiter__social .fa-twitter:hover {
+  color: #1da1f2;
+}
+
+/* About - Coffe Info (cartoon Coffe)*/
+
+
+.coffee-info .container  .coffee-sort:hover{
+  transform: perspective(100rem) scale(1.05 , 1.05);
+}
+
+
+/* About - Our Skills */
+
+.skills .application .skills__text:hover {
+ color: var(--dark-brown-color);
+ transform: perspective(100rem) translateX(1rem);
+}
+
+.mini-information .info .mini-info:first-child:hover,
+.mini-information .info .mini-info:nth-child(2):hover {
+  transform: perspective(100rem) translateX(-1rem) translateY(-1rem);
+}
+
+.mini-information .info .mini-info:last-child:hover,
+.mini-information .info .mini-info:nth-child(3):hover {
+  transform: perspective(100rem) translateX(1rem) translateY(-1rem);
+}
+
+
+/* About - Offering */
+
+
+.offering .offering-div .offers .fas:hover,
+.offering .offering-div .offers .far:hover {
+  color: var(--light-brown-color);
+} 
+
+
+/* ----------------------------------------------------------------------------  */
+
+
+
+/* Process -  */
+
+.process .packing-coffee .packing-coffee-div .packing-coffee--check:hover,
+.process .roasting-beans .roasting-beans-div .roasting-beans--check:hover,
+.process .coffee-roastery .coffee-roastery-div .coffee-roastery--check:hover,
+.process .coffee-beans .coffee-beans-div .coffee-beans--check:hover  {
+  color: var(--dark-brown-color);
+  transform: perspective(100rem) translateX(1rem);
+ }
+
+
+/* ----------------------------------------------------------------------------  */
+
+
+/* Shop - Discount */
+
+
+.discount .card .card__link:hover  .fas{
+transform: perspective(100rem) translateX(1rem);
+transition: all 0.3s ease; }
+
+
+.products .object:hover{
+  transform: perspective(100rem) translateY(-1rem);
+}
+
+/* ----------------------------------------------------------------------------  */
+
+
+/* Contact - Contact Info*/
+
+.contact-info .info:hover,
+.contact-info .info .fas:hover {
+  color: var(--paragraph-color);
+}
+
+
+/* Contact - Contact From */
+
+
+.background .contact .contact-form button:hover {
+  border: 0.3rem solid var(--light-brown-color);
+  background-color: var(--light-brown-color);
+  color: var(--white-color);
+}
+
+
+
+.background .contact .contact-form button:focus {
+  outline: none;
+  outline: none;
+}
+
+
+.background .contact .contact-form input:focus {
+border: 2px solid var(--light-brown-color);
+outline: none;
+}
+
+.background .contact .contact-form textarea:focus {
+  border: 2px solid var(--light-brown-color);
+outline: none;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------  */
+
+
+/* Footer - Opening hours, location, contact */
+
+
+.footer .opening-hours .title:hover,
+.footer .location .coffee-shop h3:hover,
+.footer .location .caffeteria h3:hover,
+.footer .contact h3:hover {
+  color: var(--light-brown-color);
+}
+
+
+
+.footer .opening-hours .div h3 .color-change-1:hover,
+.footer .opening-hours .div h3 .color-change-2:hover {
+  color: white;
+} 
+
+
+.footer .location .coffee-shop p:hover,
+.footer .location .caffeteria p:hover  {
+  color: var(--white-color);
+}
+
+
+
+.footer .contact .curvise:hover,
+.footer .contact p:hover
+ {
+  color: var(--white-color);
+}
+
+
+
+/* ----------------------------------------------------------------------------  */
+
+
+
+/* Copyrights */
+
+.copyrights .copyrights__logo:hover {
+  color: var(--light-brown-color);
+}
+
+.copyrights .social .fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.copyrights .social .fa-facebook-f:hover {
+  color: #4267b2;
+}
+
+.copyrights .social .fa-hashtag:hover {
+  color: #c13584;
+}
+
+.copyrights .social .fa-tumblr:hover {
+  color: #5e5e77;
+}
+
+.copyrights .social .fa-google:hover {
+  color: #0f9d58;
+}
+

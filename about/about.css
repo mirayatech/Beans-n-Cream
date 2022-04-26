@@ -1,0 +1,1457 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+:root {
+  --dark-brown-color: #30271c;
+  --light-brown-color: #c7a17a;
+  --white-color: #fff;
+  --paragraph-color: #666666;
+  --light-grey-color: #aca9ac;
+  --light-beige-color: #eae7de;
+  --sponser-color: #f5f5f5;
+  --dark-grey-color: #151412;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  color: var(--paragraph-color);
+}
+
+.cursive {
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: var(--dark-brown-color);
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--dark-brown-color);
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  color: var(--dark-brown-color);
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.192),
+      rgba(0, 0, 0, 0.568)
+    ),
+    url('../Assets/images/header-fourth.jpg') no-repeat center center/cover;
+  height: 50vh;
+}
+
+/* Header - Logo & Navigationbar */
+
+.hero .hero__div--primary {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+  background: linear-gradient(#29211bcc, #29211bcc);
+  position: fixed;
+  width: 100%;
+}
+
+.hero__div--primary .logo a {
+  color: var(--white-color);
+}
+
+.hero__div--primary .hero__navigationbar {
+  display: flex;
+}
+
+.hero__navigationbar .hero__navigation--list {
+  display: flex;
+}
+
+.hero__navigationbar .hero__navigation--list .hero__navigation--links {
+  display: flex;
+  padding: 1rem 3rem 0 3rem;
+  font-size: 1.8rem;
+  font-family: "Oswald", sans-serif;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.hero__navigation--list .hero__navigation--links a {
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+/* Header -  Title & location*/
+
+.hero__div--secondary {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 55vh;
+}
+
+.hero__div--secondary .title {
+  font-size: 6rem;
+  margin-bottom: 3.5rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.hero__div--secondary .cursive a:link,
+.hero__div--secondary .curvise a:visited,
+.hero__div--secondary .cursive a {
+  font-size: 2.5rem;
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+.hero__div--secondary .cursive {
+  font-size: 2.5rem;
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* What we Offer */
+
+.offering {
+  background-color: var(--light-beige-color);
+  padding: 3.5rem 0;
+}
+
+.offering .offering-div {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.offering .offering-div .offers {
+  padding: 5rem;
+}
+
+.offering .offering-div .offers .offers__flex {
+  padding-top: 1rem;
+}
+
+.offering .offering-div .offers .offers__flex .offers__title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.offering .offering-div .offers .fas,
+.offering .offering-div .offers .far {
+  font-size: 2.8rem;
+  color: var(--dark-brown-color);
+  transition: all .3s ease;
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* Team Member */
+
+.team {
+padding: 10rem  0;
+}
+
+/* Team - Intro */
+
+.team .team__intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.team .team__intro .cursive {
+  color: var(--light-brown-color);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.team .team__intro .hr {
+  border: none;
+  border-bottom: 2px solid var(--light-brown-color);
+  width: 10%;
+  margin: 2.5rem auto;
+}
+
+
+/* Team -Team Member */
+
+
+.team .team-member {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 150rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Team -Team Member - Waiter */
+
+.team-member .waiter {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.team .team-member .waiter .waiter__profil {
+  width: 70%;
+}
+
+.team .team-member .waiter .waiter__name {
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.team .team-member .waiter .cursive {
+  color: var(--light-brown-color);
+  margin-bottom: 2rem;
+}
+
+.team .team-member .waiter .waiter__social .fab,
+.team .team-member .waiter .waiter__social .fas {
+  padding: 0 1rem;
+  font-size: 1.8rem;
+  color: var(--light-grey-color);
+  transition: all .3s ease;
+}
+
+
+/* ----------------------------------------------------------------------------  */
+
+/* Coffee Info */
+
+.coffee-info {
+  background-color: var(--dark-grey-color);
+  display: flex;
+  flex-direction: column;
+padding: 10rem 0;
+}
+  
+
+
+/* Coffee Info - Intro */
+
+.coffee-info .coffee-info__intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.coffee-info .coffee-info__intro .cursive {
+  color: var(--light-brown-color);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.coffee-info .coffee-info__intro .coffee-info__title {
+  color: var(--white-color);
+}
+
+.coffee-info .coffee-info__intro .hr {
+  border: none;
+  border-bottom: 2px solid var(--light-brown-color);
+  width: 10%;
+  margin: 2.5rem auto;
+}
+
+/* Coffee Intro - Container */
+
+
+.coffee-info .container {
+  display: flex;
+  justify-content: center;
+}
+
+.coffee-info .container:first-child {
+  margin-bottom: 10rem;
+}
+
+/* COffe Intro  Container - Coffe sorts */
+
+.coffee-info .container  .coffee-sort{
+  padding: 2.5rem 5rem;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+.coffee-info .container .coffee-sort .coffee-sort__flex .coffee-sort__title {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.coffee-info .container .coffee-sort .coffee-sort__flex .coffee-sort__description {
+  color: var(--white-color);
+  
+}
+
+
+/* ----------------------------------------------------------------------------  */
+
+
+/* Our Skills */
+
+.skills {
+  background-color: var(--light-beige-color);
+padding: 10rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+
+.skills .application .skills__text {
+  margin-bottom: 2rem;
+  transition: all .3s ease;
+}
+
+
+.skills .application .skills__text .fas {
+  color: var(--light-brown-color);
+}
+
+.skills .application .cursive {
+  color: var(--light-brown-color);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.skills .application .hr {
+  border: none;
+  border-bottom: 3px solid var(--light-brown-color);
+  width: 25%;
+  margin: 2rem 0;
+}
+
+
+/* ----------------------------------------------------------------------------  */
+
+/* Mini Info */
+
+
+
+.mini-information {
+  padding: 4rem 0;
+}
+
+.mini-information .info {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.mini-information .info .mini-info {
+  padding: 5rem;
+  transition: all .3s ease;
+}
+
+.mini-information .info .mini-info .mini-info__flex {
+  padding-top: 1rem;
+}
+
+.mini-information .info .mini-info .mini-info__flex .mini-info__title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.mini-information .info .mini-info img{
+ margin-bottom: 2rem;
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* Footer */
+
+.footer {
+  background: linear-gradient(#29211bd0, #29211bcc),
+    url("../Assets/images/footer.jpg") no-repeat center center/cover;
+  display: flex;
+  padding: 5rem 0;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+/* Footer - Opening Hours */
+
+.footer .opening-hours .title {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.footer .opening-hours .div h3 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.footer .opening-hours .div h3 .color-change-2 {
+  color: var(--light-brown-color);
+  transition: all 0.3s ease;
+}
+
+.footer .opening-hours .div h3 .color-change-1 {
+  color: var(--light-grey-color);
+  transition: all 0.3s ease;
+}
+
+/* Footer - Opening location -Coffe shop */
+
+.footer .location .coffee-shop {
+  margin-bottom: 5rem;
+}
+
+.footer .location .coffee-shop h3:link,
+.footer .location .coffee-shop h3:visited,
+.footer .location .coffee-shop h3 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.footer .location .coffee-shop p {
+  color: var(--light-grey-color);
+  transition: all 0.3s ease;
+}
+
+/* Footer - Opening location - Caffeteria */
+
+.footer .location .caffeteria h3 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.footer .location .caffeteria p {
+  color: var(--light-grey-color);
+  transition: all 0.3s ease;
+}
+
+/* Footer - Opening location - Contact*/
+
+.footer .contact h3:link,
+.footer .contact h3:visited,
+.footer .contact h3 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.footer .contact .curvise {
+  color: var(--light-brown-color);
+  transition: all 0.3s ease;
+}
+
+.footer .contact p {
+  color: var(--light-grey-color);
+  line-height: 2;
+  transition: all 0.3s ease;
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* Copyrights */
+
+.copyrights {
+  display: flex;
+  justify-content: space-evenly;
+  background: #1f1e1e;
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+
+.copyrights .copyrights__logo {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.copyrights .social {
+  margin: 0 11rem;
+}
+
+.copyrights .social .fab,
+.copyrights .social .fas {
+  color: var(--white-color);
+  font-size: 1.6rem;
+  padding: 0 1rem;
+  transition: all 0.3s ease;
+}
+
+.copyrights .cpy {
+  color: var(--white-color);
+}
+
+
+/* ----------------------------------------------------------------------------  */
+
+/* Media Query */
+
+/*  Media Query 1510px */
+
+@media (max-width: 1510px) {
+
+  /* Offering */
+  .offering .offering-div .offers {
+    padding: 5rem 2.5rem;
+  }
+
+  /* Team Member */
+
+  .team .team-member {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 130rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* COffe Intro  Container - Coffe sorts */
+
+.coffee-info .container  .coffee-sort{
+  padding: 2.5rem 2rem;
+}
+
+  /* Mini info */
+
+.mini-information .info .mini-info {
+  padding: 5rem 2.5rem;
+  transition: all .3s ease;
+}
+.mini-information .info .mini-info img{
+ width: 30%;
+ }
+
+  
+}
+
+
+/*  Media Query 1360px */
+
+@media (max-width: 1360px) {
+
+  /* Offering */
+
+
+  .offering .offering-div {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, auto);
+  }
+ 
+    .offering .offering-div .offers {
+    padding: 5rem ;
+  }
+
+ 
+  
+  .offering .offering-div .offers .offers__flex .offers__title {
+    font-size: 2rem;
+  }
+  
+  .offering .offering-div .offers .fas,
+  .offering .offering-div .offers .far {
+    font-size: 2.8rem;
+  }
+  
+  /* Team Member */
+
+  .team .team-member {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+/* Coffee Info - Intro */
+
+.coffee-info .coffee-info__intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+/* Coffee Intro - Container */
+
+
+.coffee-info .container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+}
+
+.coffee-info .container {
+  margin-bottom: 0;
+}
+
+/* COffe Intro  Container - Coffe sorts */
+.coffee-info .container  .coffee-sort{
+  padding: 5rem 10rem;
+}
+
+
+
+/* Our Skills */
+
+.skills {
+padding: 10rem 0 10rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+.skills  .application {
+  padding: 10rem 0rem;
+}
+
+
+.skills .application .skills__text {
+  margin-bottom: 2rem;}
+
+  /* Mini info */
+
+  .mini-information .info {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, auto);
+  }
+
+.mini-information .info .mini-info {
+  padding: 5rem 2.5rem;
+  transition: all .3s ease;
+}
+
+  
+}
+
+
+
+
+/*  Media Query 12200px */
+
+@media (max-width: 1220px) {
+
+  
+  /* Team Member */
+
+  .team .team-member {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .team .team-member .waiter .waiter__profil {
+    width: 80%;
+  }
+
+
+/* Coffe Intro  Container - Coffe sorts */
+.coffee-info .container  .coffee-sort{
+  padding: 5rem ;
+}
+
+
+.coffee-info .container {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  justify-content: center;
+}
+
+
+
+/* Our Skills */
+
+.skills {
+padding:  5rem 0 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+.skills  .application {
+  padding: 10rem 0rem;
+}
+
+
+.skills .application .skills__text {
+  margin-bottom: 2rem;
+}
+
+.skills .skills-img {
+  margin-top: -10rem;
+}
+
+}
+
+  
+/*  Media Query 1130px */
+
+@media (max-width: 1130px) {
+  /* Header - Logo & Navigationbar */
+
+  .hero .hero__div--primary {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    position: relative;
+    width: auto;
+    background: linear-gradient(#29211bcc, #29211bcc);
+    z-index: 10000;
+  }
+
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    padding: 1rem 2rem 0 2rem;
+  }
+
+  /* Header -  Title & location*/
+
+  .hero__div--secondary {
+    height: 35vh;
+  }
+
+  .hero .hero__div--primary {
+    display: block;
+    text-align: center;
+  }
+
+  .hero__div--primary .logo a {
+    color: var(--white-color);
+    margin-bottom: 1rem;
+  }
+
+  .hero__div--primary .hero__navigationbar {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+/*  Media Query 925px */
+
+@media (max-width: 925px) {
+
+    /* Offering */
+
+
+    .offering .offering-div {
+      display: grid;
+      text-align: center;
+      justify-content: center;
+      grid-template-columns: repeat(1, auto);
+    }
+   
+  
+  /* Team Member */
+
+  .team .team-member {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    width: 50%;
+  }
+
+
+  .team .team-member .waiter .waiter__profil {
+    width: 80%;
+  }
+
+
+/* Coffe Intro  Container - Coffe sorts */
+.coffee-info .container  .coffee-sort{
+  padding: 5rem ;
+}
+
+.coffee-info .container img {
+  width: 40%;
+}
+
+  /* Mini info */
+
+  .mini-information .info {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, auto);
+  }
+
+}
+
+  
+
+
+
+/*  Media Query 840px */
+
+@media (max-width: 840px) {
+  /* Footer */
+
+  .footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Footer - Opening Hours */
+  .footer .opening-hours {
+    margin-bottom: 3rem;
+    order: -4;
+  }
+
+  /* Footer - Opening location -Coffe shop */
+  .footer .location .coffee-shop {
+    margin-bottom: 1rem;
+  }
+  .footer .location .coffee-shop h3:link,
+  .footer .location .coffee-shop h3:visited,
+  .footer .location .coffee-shop h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Footer - Opening location - Caffeteria */
+  .footer .location .caffeteria .footer .location .caffeteria h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Footer - Opening location - Contact*/
+  .footer .contact {
+    order: -1;
+    margin-bottom: 3rem;
+  }
+  .footer .contact h3:link,
+  .footer .contact h3:visited,
+  .footer .contact h3 {
+    margin-bottom: 1rem;
+  }
+
+  .footer .contact p {
+    line-height: 1.8;
+  }
+
+  /* ----------------------------------------------------------------------------  */
+
+  /* Copyrights */
+
+  .copyrights {
+    display: flex;
+    justify-content: space-evenly;
+    background: #1f1e1e;
+    padding: 2rem 2rem 1.5rem 2rem;
+  }
+
+  .copyrights .social {
+    margin: 0;
+  }
+}
+
+/*  Media Query 765px */
+
+@media (max-width: 765px) {
+  /* Header - Logo & Navigationbar */
+
+  .hero .hero__div--primary {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    position: relative;
+    width: auto;
+    background: linear-gradient(#29211bcc, #29211bcc);
+    z-index: 10000;
+  }
+
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    padding: 1rem 2rem 0 2rem;
+  }
+
+  /* Header -  Title & location*/
+
+  .hero__div--secondary {
+    height: 35vh;
+  }
+
+  .hero .hero__div--primary {
+    display: block;
+    text-align: center;
+  }
+
+  .hero__div--primary .logo a {
+    color: var(--white-color);
+    margin-bottom: 1rem;
+  }
+
+  .hero__div--primary .hero__navigationbar {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+
+
+
+/*  Media Query 760px */
+
+@media (max-width: 760px) {
+
+
+/* Team Member */
+
+.team .team-member {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  width: 50%;
+}
+
+
+.team .team-member .waiter .waiter__profil {
+  width: 90%;
+}
+
+
+.team .team__intro .cursive {
+  font-size: 1.6rem;
+}
+
+.team .team__intro  .team__title{
+  font-size: 2.5rem;
+}
+
+
+
+
+
+/* COffe Info */
+
+.coffee-info .container .coffee-sort img {
+  width: 30%;
+}
+
+
+.coffee-info .coffee-info__intro .cursive {
+  font-size: 1.6rem;
+}
+
+.coffee-info .coffee-info__intro .coffee-info__title{
+  font-size: 2.5rem;
+}
+
+
+  /* Our Skills */
+
+  .skills {
+    padding:  5rem 0 10rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly
+    }
+    
+    .skills  .application {
+      padding: 10rem 5rem;
+    }
+  
+    .skills .application .cursive {
+      font-size: 1.6rem;
+    }
+  
+    .skills .application .application__title {
+      font-size: 2.5rem;
+    }
+    
+    
+    .skills .application .skills__text {
+      font-size: 1.3rem;
+    }
+    
+    .skills .skills-img {
+      margin-top: 0;
+      padding: 0;
+      margin: 0;
+    }
+  
+  
+    .skills .skills-img img {
+  padding: 0;
+  margin: 0;
+  margin-top: -10rem;
+  width: 85%;
+    }
+  
+  
+    .skills .application .hr {
+      border: none;
+      border-bottom: 3px solid var(--light-brown-color);
+      width: 25%;
+      margin: 2rem auto;
+    }
+
+/* Mini info */
+
+.mini-information .info .mini-info .mini-info__flex {
+  padding-top: 1rem;
+}
+
+.mini-information .info .mini-info .mini-info__flex .mini-info__title {
+  font-size: 2rem;
+}
+
+.mini-information .info .mini-info img{
+width: 20%;
+}
+
+
+}
+
+/*  Media Query 665px */
+
+@media (max-width: 675px) {
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:first-child {
+    padding: 1rem 1rem 0 0;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:last-child {
+    padding: 1rem 0 0 1rem;
+  }
+
+}
+
+
+
+/*  Media Query 580px */
+
+@media (max-width: 580px) {
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:first-child {
+    padding: 1rem 1rem 0 0;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:last-child {
+    padding: 1rem 0 0 1rem;
+  }
+}
+
+/*  Media Query 562px */
+
+@media (max-width: 562px) {
+
+
+  .hero__div--secondary .title {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero__div--secondary .cursive a:link,
+  .hero__div--secondary .curvise a:visited,
+  .hero__div--secondary .cursive a {
+    font-size: 2rem;
+  }
+
+  .hero__div--secondary .cursive {
+    font-size: 2rem;
+  }
+}
+/*  Media Query 540px */
+
+@media (max-width: 540px) { 
+
+/* Team Member */
+
+.team .team-member {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  width: 70%;
+}
+
+
+}
+
+/*  Media Query 538px */
+
+@media (max-width: 538px) {
+  /* Header - Logo & Navigationbar */
+
+  .hero {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.192),
+        rgba(0, 0, 0, 0.568)
+      ),
+      url("../Assets/images/header-secondary.jpg") no-repeat center center/cover;
+    height: 40vh;
+  }
+
+  .hero__div--primary .logo a {
+    font-size: 2.5rem;
+  }
+
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    font-size: 1.4rem;
+  }
+
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:first-child {
+    padding: 1rem 1rem 0 0;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:last-child {
+    padding: 1rem 0 0 1rem;
+  }
+
+  /* Header -  Title & location*/
+
+  .hero__div--secondary {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 25vh;
+  }
+
+  .hero__div--secondary .title {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero__div--secondary .cursive a:link,
+  .hero__div--secondary .curvise a:visited,
+  .hero__div--secondary .cursive a {
+    font-size: 1.5rem;
+  }
+
+  .hero__div--secondary .cursive {
+    font-size: 1.5rem;
+  }
+
+  .copyrights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #1f1e1e;
+    padding: 2rem 2rem 1.5rem 2rem;
+    align-items: center;
+  }
+
+  .copyrights .social {
+    margin: 1.5rem 0;
+  }
+}
+
+
+/*  Media Query 450px */
+
+@media (max-width: 450px) {
+  /* hero */
+
+  .hero {
+    height: 40vh;
+  }
+
+  /* Header - Logo & Navigationbar */
+
+  .hero .hero__div--primary {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__div--primary .logo a {
+    font-size: 2.5rem;
+  }
+
+  .hero__navigationbar .hero__navigation--list {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    padding: 0.3rem 0;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:first-child {
+    padding: 1rem 0 0.3rem 0;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:last-child {
+    padding: 0.5rem 0 0 0rem;
+  }
+
+  /* Header -  Title & location*/
+
+  .hero__div--secondary {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+  }
+
+  .hero__div--secondary .title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero__div--secondary .cursive a:link,
+  .hero__div--secondary .curvise a:visited,
+  .hero__div--secondary .cursive a {
+    font-size: 1.4rem;
+  }
+
+  .hero__div--secondary .cursive {
+    font-size: 1.4rem;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*  Media Query 400px */
+
+@media (max-width: 400px) {
+
+
+
+/* Team Member */
+
+.team .team-member {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  width: 90%;
+}
+
+
+.team .team-member .waiter .waiter__profil {
+  width: 90%;
+}
+
+
+.team .team-member .waiter .waiter__name {
+  font-size: 1.8rem;
+}
+
+.team .team-member .waiter .cursive {
+  font-size: 1.4rem;
+}
+
+.team .team__intro .cursive {
+  font-size: 1.4rem;
+}
+
+.team .team__intro  .team__title{
+  font-size: 2.2rem;
+}
+
+
+  /* Offerning  */
+  .offering .offering-div .offers {
+    padding: 5rem 2.5rem;
+  }
+  .offering .offering-div .offers .fas,
+  .offering .offering-div .offers .far {
+    font-size: 2.5rem;
+  }
+
+
+
+/* COffe Info */
+
+.coffee-info .container .coffee-sort img {
+  width: 30%;
+}
+
+.coffee-info .container  .coffee-sort{
+  padding: 5rem 2.5rem ;
+}
+
+
+.coffee-info .coffee-info__intro .cursive {
+  font-size: 1.6rem;
+}
+
+.coffee-info .coffee-info__intro .coffee-info__title{
+  font-size: 2.5rem;
+}
+
+
+/* Our Skills */
+
+.skills  .application {
+  padding: 10rem 2.5rem;
+}
+
+
+/* Mini info */
+
+.mini-information .info .mini-info .mini-info__flex {
+  padding-top: 1rem;
+}
+
+.mini-information .info .mini-info .mini-info__flex .mini-info__title {
+  font-size: 1.8rem;
+}
+
+.mini-information .info .mini-info img{
+width: 18%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Media Query 350px */
+
+@media (max-width: 350px) {
+  .menu .menu__coffee .all-coffees .coffee-sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3rem 0;
+    padding: 0 2rem;
+    transition: all 0.3s ease;
+  }
+
+  .menu .menu__coffee .all-coffees .coffee-sort img {
+    width: 20%;
+    margin: 1rem 0;
+  }
+
+  .menu .menu__coffee .all-coffees .coffee-sort .coffee-sort__name {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+  }
+
+  .menu .menu__coffee .all-coffees .coffee-sort .coffee-sort__description {
+    color: var(--light-brown-color);
+    font-size: 1.4rem;
+  }
+}

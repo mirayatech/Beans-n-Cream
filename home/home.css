@@ -1,0 +1,1842 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+:root {
+  --dark-brown-color: #30271c;
+  --light-brown-color: #c7a17a;
+  --white-color: #fff;
+  --paragraph-color: #666666;
+  --light-grey-color: #aca9ac;
+  --light-beige-color: #eae7de;
+  --sponser-color: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  color: var(--paragraph-color);
+}
+
+.cursive {
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: var(--dark-brown-color);
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--dark-brown-color);
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  color: var(--dark-brown-color);
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.192),
+      rgba(0, 0, 0, 0.568)
+    ),
+    url("../Assets/images/header.jpeg") no-repeat center center/cover;
+  height: 93vh;
+}
+
+/* Header - Logo & Navigationbar */
+
+.hero .hero__div--primary {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+  background: linear-gradient(#29211bcc, #29211bcc);
+  position: fixed;
+  width: 100%;
+}
+
+.hero__div--primary .logo a {
+  color: var(--white-color);
+}
+
+.hero__div--primary .hero__navigationbar {
+  display: flex;
+}
+
+.hero__navigationbar .hero__navigation--list {
+  display: flex;
+}
+
+.hero__navigationbar .hero__navigation--list .hero__navigation--links {
+  display: flex;
+  padding: 1rem 3rem 0 3rem;
+  font-size: 1.8rem;
+  font-family: "Oswald", sans-serif;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.hero__navigation--list .hero__navigation--links a {
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+/* Header -  Slogan */
+
+.hero__div--secondary {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+}
+
+.hero__div--secondary .hero__img {
+  margin-bottom: 3rem;
+  width: 13%;
+}
+
+.hero__div--secondary .slogan {
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.hero__div--secondary .cursive {
+  font-size: 3rem;
+  color: var(--white-color);
+  margin-bottom: 3rem;
+}
+
+.hero__div--secondary .btn__menu:link,
+.hero__div--secondary .btn__menu:visited,
+.hero__div--secondary .btn__menu {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 1.5rem;
+  background: var(--dark-brown-color);
+  border: 0.3rem solid var(--dark-brown-color);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+  box-shadow: -0.2rem -0.2rem 0.2rem rgba(0, 0, 0, 0.076),
+    0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.076);
+  text-transform: uppercase;
+  animation-name: hero-button;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* Beige Background */
+
+.beige__background {
+  background-color: var(--light-beige-color);
+  height: auto;
+  display: flex;
+}
+
+/* White Background */
+
+.white__background {
+  background-color: var(--white-color);
+  width: 75%;
+  padding: 8rem 4rem 0 4rem;
+  margin-top: -5rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -1rem 0 1rem rgba(60, 60, 60, 0.022),
+    1rem 0 1rem rgba(60, 60, 60, 0.022);
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* Mini Info */
+
+.mini-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+  justify-content: center;
+}
+
+.mini-info .mini-info__intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.mini-info .mini-info__intro .cursive {
+  color: var(--light-brown-color);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.mini-info .mini-info__intro .hr {
+  border: none;
+  border-bottom: 2px solid var(--light-brown-color);
+  width: 10%;
+  margin: 2.5rem auto;
+}
+
+/* Mini Info - Container */
+
+.mini-info .container {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.coffe-to-go__img img {
+  margin: 2rem 0.5rem 0 0.5rem;
+}
+
+/* Container - food  */
+
+.container .food-div__card {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 3rem 1rem;
+  text-align: right;
+}
+
+.food-div__card .food-div__title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.container .food-div__card .food-div__images img {
+  width: 50%;
+}
+
+/* Container - coffee  */
+
+.container .coffee-div__card {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 3rem 1rem;
+  text-align: left;
+}
+
+.coffee-div__card .coffee-div__title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.container .coffee-div__card .coffee-div__images img {
+  width: 50%;
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* Grid Links */
+
+.grid-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.grid-links .card__link:link,
+.grid-links .card__link:visited,
+.grid-links .card__link {
+  color: var(--white-color);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.grid-links .card__link .fas {
+  transition: all 0.3s ease;
+}
+
+/* Grid Links - Process */
+
+.grid-links .process {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.274),
+      rgba(0, 0, 0, 0.274)
+    ),
+    url("../Assets/images/process-2.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 5rem 0 5rem 5rem;
+}
+
+.grid-links .process .card__title {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-links .process .card__description {
+  color: var(--white-color);
+}
+
+/* Grid Links - About */
+
+.grid-links .about {
+  background-color: var(--light-beige-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 5rem 0 5rem 5rem;
+}
+
+.grid-links .about .card__title {
+  color: var(--dark-brown-color);
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-links .about .card__description {
+  color: var(--dark-brown-color);
+}
+
+.grid-links .about .card__link {
+  color: var(--dark-brown-color);
+}
+
+/* Grid Links - Primary Images */
+
+.grid-links .primary-images {
+  background: url("../Assets/images/coffe&crossaint.jpg") no-repeat center
+    center/cover;
+}
+
+/* Grid Links - Shop */
+
+.grid-links .shop {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.274),
+      rgba(0, 0, 0, 0.274)
+    ),
+    url("../Assets/images/product-6.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 5rem 0 5rem 5rem;
+}
+
+.grid-links .shop .shop__title {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-links .shop .shop__description {
+  color: var(--white-color);
+}
+
+/* Grid Links - Secondary Images  */
+
+.grid-links .secondary-images {
+  background: url("../Assets/images/grid-link-2.jpeg") no-repeat center
+    center/cover;
+}
+
+/* Grid Links - Reservation */
+
+.grid-links .reservation {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.274),
+      rgba(0, 0, 0, 0.274)
+    ),
+    url("../Assets/images/grid-link-3.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 5rem 0 5rem 5rem;
+}
+
+.grid-links .reservation .card__title {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-links .reservation .card__description {
+  color: var(--white-color);
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* Quote  */
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.274),
+      rgba(0, 0, 0, 0.274)
+    ),
+    url(../Assets/images/quote-img.jpg) no-repeat center center/cover;
+  height: auto;
+  margin-bottom: 10rem;
+  padding: 5rem 2.5rem;
+}
+
+.quote .fa-quote-right {
+  color: var(--white-color);
+  font-size: 4rem;
+  margin-bottom: 3.5rem;
+}
+
+.quote .cursive {
+  color: var(--white-color);
+  font-size: 2.5rem;
+  margin-bottom: 3.5rem;
+  font-style: italic;
+}
+
+.quote .author {
+  color: var(--white-color);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* Menu */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+  justify-content: center;
+}
+
+/* Menu - Intro */
+
+.menu .menu__intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.menu .menu__intro .cursive {
+  color: var(--light-brown-color);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.menu .menu__intro .hr {
+  border: none;
+  border-bottom: 2px solid var(--light-brown-color);
+  width: 10%;
+  margin: 2.5rem auto;
+}
+
+/* Menu - Menu Coffe */
+
+.menu .menu__coffee {
+  display: flex;
+  justify-content: center;
+}
+
+.menu .menu__coffee .all-coffees .dotted {
+  border: none;
+  border-bottom: 0.3rem dotted var(--light-beige-color);
+  width: 80%;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu .menu__coffee .all-coffees .coffee-sort {
+  display: flex;
+  margin: 1rem 5rem;
+  transition: all 0.3s ease;
+}
+
+.menu .menu__coffee .all-coffees .coffee-sort .coffee-sort__name {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.menu .menu__coffee .all-coffees .coffee-sort .coffee-sort__description {
+  color: var(--light-brown-color);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu .menu__coffee .all-coffees:first-child .coffee-sort:hover {
+  transform: perspective(100rem) translateX(-1rem);
+}
+
+.menu .menu__coffee .all-coffees:last-child .coffee-sort:hover {
+  transform: perspective(100rem) translateX(1rem);
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* Sponser */
+
+.sponser {
+  background: var(--sponser-color);
+  margin: 0 -4rem;
+  padding: 6rem 2.5rem;
+}
+
+.sponser .sponser-brand {
+  transition: all 0.3s ease;
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* Footer */
+
+.footer {
+  background: linear-gradient(#29211bd0, #29211bcc),
+    url("../Assets/images/footer.jpg") no-repeat center center/cover;
+  display: flex;
+  padding: 5rem 0;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+/* Footer - Opening Hours */
+
+.footer .opening-hours .title {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.footer .opening-hours .div h3 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.footer .opening-hours .div h3 .color-change-2 {
+  color: var(--light-brown-color);
+  transition: all 0.3s ease;
+}
+
+.footer .opening-hours .div h3 .color-change-1 {
+  color: var(--light-grey-color);
+  transition: all 0.3s ease;
+}
+
+/* Footer - Opening location -Coffe shop */
+
+.footer .location .coffee-shop {
+  margin-bottom: 5rem;
+}
+
+.footer .location .coffee-shop h3:link,
+.footer .location .coffee-shop h3:visited,
+.footer .location .coffee-shop h3 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.footer .location .coffee-shop p {
+  color: var(--light-grey-color);
+  transition: all 0.3s ease;
+}
+
+/* Footer - Opening location - Caffeteria */
+
+.footer .location .caffeteria h3 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.footer .location .caffeteria p {
+  color: var(--light-grey-color);
+  transition: all 0.3s ease;
+}
+
+/* Footer - Opening location - Contact*/
+
+.footer .contact h3:link,
+.footer .contact h3:visited,
+.footer .contact h3 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.footer .contact .curvise {
+  color: var(--light-brown-color);
+  transition: all 0.3s ease;
+}
+
+.footer .contact p {
+  color: var(--light-grey-color);
+  line-height: 2;
+  transition: all 0.3s ease;
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* Copyrights */
+
+.copyrights {
+  display: flex;
+  justify-content: space-evenly;
+  background: #1f1e1e;
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+
+.copyrights .copyrights__logo {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.copyrights .social .fab,
+.copyrights .social .fas {
+  color: var(--white-color);
+  font-size: 1.6rem;
+  padding: 0 1rem;
+  transition: all 0.3s ease;
+}
+
+.copyrights .cpy {
+  color: var(--white-color);
+}
+
+/* ----------------------------------------------------------------------------  */
+
+/* Media Query */
+
+/*  Media Query 1680px */
+
+@media (max-width: 1680px) {
+  /* Container - food  */
+
+  .container .food-div__card .food-div__images img {
+    width: 60%;
+  }
+
+  /* Container - coffee  */
+
+  .container .coffee-div__card .coffee-div__images img {
+    width: 60%;
+  }
+
+  /* Sponser */
+
+  .sponser {
+    background: var(--sponser-color);
+    margin: 0 -4rem;
+    padding: 6rem 2rem;
+    display: flex;
+  }
+
+  .sponser .sponser-brand {
+    transition: all 0.3s ease;
+    width: 20%;
+  }
+
+  /* White Background */
+
+  .white__background {
+    background-color: var(--white-color);
+    width: 80%;
+  }
+}
+
+/*  Media Query 1550px */
+
+@media (max-width: 1550px) {
+  /* Mini Info - Container */
+
+  .mini-info .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    flex-direction: column;
+  }
+
+  .coffe-to-go__img img {
+    margin: 5rem 0;
+  }
+
+  /* Container - food/coffee  */
+
+  .container .food-div__card,
+  .container .coffee-div__card {
+    display: flex;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .container .food-div__card {
+    flex-direction: column-reverse;
+    padding: 0 2rem 5rem 2rem;
+  }
+
+  .food-div__card .food-div__title,
+  .coffee-div__card .coffee-div__title {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .container .food-div__card .food-div__images img,
+  .container .coffee-div__card .coffee-div__images img {
+    width: 55%;
+  }
+
+  .container .coffee-div__card .coffee-div__images img {
+    margin-right: 3rem;
+  }
+
+  /* Grid Links */
+
+  .grid-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Grid Links - Process */
+
+  .grid-links .process {
+    padding: 5rem 0 5rem 5rem;
+  }
+
+  .grid-links .process .card__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Grid Links - About */
+
+  .grid-links .about {
+    padding: 5rem 0 5rem 5rem;
+    order: 1;
+  }
+
+  .grid-links .about .card__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Grid Links - Primary Images */
+
+  .grid-links .primary-images {
+    background: url("../Assets/images/coffe&crossaint.jpg") no-repeat center
+      center/cover;
+    order: -1;
+  }
+
+  /* Grid Links - Shop */
+
+  .grid-links .shop {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.274),
+        rgba(0, 0, 0, 0.274)
+      ),
+      url("../Assets/images/product-6.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 5rem 0 5rem 5rem;
+  }
+
+  .grid-links .shop .shop__title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid-links .shop .shop__description {
+    color: var(--white-color);
+  }
+
+  /* Grid Links - Secondary Images  */
+
+  .grid-links .secondary-images {
+    background: url("../Assets/images/grid-link-2.jpeg") no-repeat center
+      center/cover;
+  }
+
+  /* Grid Links - Reservation */
+
+  .grid-links .reservation {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.274),
+        rgba(0, 0, 0, 0.274)
+      ),
+      url("../Assets/images/grid-link-3.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 5rem 0 5rem 5rem;
+  }
+
+  .grid-links .reservation .card__title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid-links .reservation .card__description {
+    color: var(--white-color);
+  }
+}
+
+/*  Media Query 1270px */
+
+@media (max-width: 1270px) {
+  .hero__div--secondary .slogan {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero__div--secondary {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 85vh;
+  }
+}
+
+/*  Media Query 1205px */
+
+@media (max-width: 1205px) {
+  /* Menu - Menu Coffe */
+  .menu .menu__coffee {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Home - Menu - All coffees  */
+
+  .menu .menu__coffee .all-coffees:first-child .coffee-sort:hover {
+    transform: perspective(100rem) translateY(-0.5rem);
+  }
+
+  .menu .menu__coffee .all-coffees:last-child .coffee-sort:hover {
+    transform: perspective(100rem) translateY(-0.5rem);
+  }
+}
+
+/*  Media Query 1130px */
+
+@media (max-width: 1130px) {
+  /* Header - Logo & Navigationbar */
+
+  .hero .hero__div--primary {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    position: relative;
+    width: auto;
+    background: linear-gradient(#29211bcc, #29211bcc);
+    z-index: 10000;
+  }
+
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    padding: 1rem 2rem 0 2rem;
+  }
+
+  /* Header -  Title & location*/
+
+  .hero__div--secondary {
+    height: 35vh;
+  }
+
+  .hero .hero__div--primary {
+    display: block;
+    text-align: center;
+  }
+
+  .hero__div--primary .logo a {
+    color: var(--white-color);
+    margin-bottom: 1rem;
+  }
+
+  .hero__div--primary .hero__navigationbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*  Media Query 1270px */
+
+  @media (max-width: 1270px) {
+    .hero__div--secondary .slogan {
+      font-size: 4.5rem;
+    }
+
+    .hero__div--secondary {
+      height: 70vh;
+    }
+
+    .hero__div--secondary .cursive {
+      font-size: 2.5rem;
+    }
+
+    .hero__div--secondary .btn__menu:link,
+    .hero__div--secondary .btn__menu:visited,
+    .hero__div--secondary .btn__menu {
+      font-size: 1.4rem;
+      padding: 1.3rem;
+    }
+
+    .hero__div--secondary .hero__img {
+      margin-bottom: 3rem;
+      width: 15%;
+    }
+  }
+
+  /* Quote  */
+
+  .quote {
+    margin-bottom: 10rem;
+    padding: 5rem 2.5rem;
+  }
+
+  .quote .fa-quote-right {
+    color: var(--white-color);
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .quote .cursive {
+    color: var(--white-color);
+    font-size: 2.2rem;
+    margin-bottom: 3.5rem;
+    font-style: italic;
+  }
+
+  .quote .author {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+  }
+}
+
+/*  Media Query 1000px */
+
+@media (max-width: 1000px) {
+  /* White Background */
+
+  .white__background {
+    background-color: var(--white-color);
+    width: 85%;
+  }
+  /* Grid Links */
+
+  .grid-links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .container .food-div__card .food-div__images img,
+  .container .coffee-div__card .coffee-div__images img {
+    width: 50%;
+  }
+
+  /* Sponser */
+
+  .sponser {
+    background: var(--sponser-color);
+    margin: 0 -4rem;
+    padding: 6rem 1rem;
+    display: flex;
+  }
+
+  .sponser .sponser-brand {
+    transition: all 0.3s ease;
+    width: 20%;
+  }
+}
+
+/*  Media Query 980px */
+
+@media (max-width: 980px) {
+  .hero__div--secondary .slogan {
+    font-size: 4.5rem;
+    padding: 0 2rem;
+  }
+
+  .hero__div--secondary {
+    height: 70vh;
+  }
+
+  .hero__div--secondary .cursive {
+    font-size: 2.5rem;
+  }
+
+  .hero__div--secondary .btn__menu:link,
+  .hero__div--secondary .btn__menu:visited,
+  .hero__div--secondary .btn__menu {
+    font-size: 1.4rem;
+    padding: 1.3rem;
+  }
+
+  .hero__div--secondary .hero__img {
+    margin-bottom: 3rem;
+    width: 20%;
+  }
+}
+
+/*  Media Query 840px */
+
+@media (max-width: 840px) {
+  /* Footer */
+
+  .footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Footer - Opening Hours */
+  .footer .opening-hours {
+    margin-bottom: 3rem;
+    order: -4;
+  }
+
+  /* Footer - Opening location -Coffe shop */
+  .footer .location .coffee-shop {
+    margin-bottom: 1rem;
+  }
+  .footer .location .coffee-shop h3:link,
+  .footer .location .coffee-shop h3:visited,
+  .footer .location .coffee-shop h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Footer - Opening location - Caffeteria */
+  .footer .location .caffeteria .footer .location .caffeteria h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Footer - Opening location - Contact*/
+  .footer .contact {
+    order: -1;
+    margin-bottom: 3rem;
+  }
+  .footer .contact h3:link,
+  .footer .contact h3:visited,
+  .footer .contact h3 {
+    margin-bottom: 1rem;
+  }
+
+  .footer .contact p {
+    line-height: 1.8;
+  }
+
+  /* ----------------------------------------------------------------------------  */
+
+  /* Copyrights */
+
+  .copyrights {
+    display: flex;
+    justify-content: space-evenly;
+    background: #1f1e1e;
+    padding: 2rem 2rem 1.5rem 2rem;
+  }
+
+  .copyrights .social {
+    margin: 0;
+  }
+}
+
+/*  Media Query 765px */
+
+@media (max-width: 765px) {
+  /* Header - Logo & Navigationbar */
+
+  .hero .hero__div--primary {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    position: relative;
+    width: auto;
+    background: linear-gradient(#29211bcc, #29211bcc);
+    z-index: 10000;
+  }
+
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    padding: 1rem 2rem 0 2rem;
+  }
+
+  /* Header -  Title & location*/
+
+  .hero__div--secondary {
+    height: 35vh;
+  }
+
+  .hero .hero__div--primary {
+    display: block;
+    text-align: center;
+  }
+
+  .hero__div--primary .logo a {
+    color: var(--white-color);
+    margin-bottom: 1rem;
+  }
+
+  .hero__div--primary .hero__navigationbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Secondary Header
+   */
+
+  .hero__div--secondary .slogan {
+    font-size: 4.5rem;
+    padding: 0 2rem;
+  }
+
+  .hero__div--secondary {
+    height: 70vh;
+  }
+
+  .hero__div--secondary .cursive {
+    font-size: 2.5rem;
+  }
+
+  .hero__div--secondary .btn__menu:link,
+  .hero__div--secondary .btn__menu:visited,
+  .hero__div--secondary .btn__menu {
+    font-size: 1.4rem;
+    padding: 1.3rem;
+  }
+
+  .hero__div--secondary .hero__img {
+    margin-bottom: 3rem;
+    width: 20%;
+  }
+}
+
+/* Media Query 690px */
+
+@media (max-width: 690px) {
+  /* Mini Info */
+
+  .mini-info .mini-info__intro .cursive {
+    font-size: 1.6rem;
+  }
+
+  .mini-info .mini-info__intro .mini-info__title {
+    font-size: 2.5rem;
+  }
+
+  .mini-info .mini-info__intro .hr {
+    border: none;
+    border-bottom: 2px solid var(--light-brown-color);
+    width: 20%;
+    margin: 2.5rem auto;
+  }
+
+  .coffe-to-go__img img {
+    margin: 5rem;
+    width: 70%;
+    text-align: center;
+  }
+
+  .food-div__card .food-div__title,
+  .coffee-div__card .coffee-div__title {
+    font-size: 1.8rem;
+  }
+
+  .container .food-div__card .food-div__images img,
+  .container .coffee-div__card .coffee-div__images img {
+    width: 50%;
+  }
+
+  .container .coffee-div__card .coffee-div__images img {
+    margin-right: 4rem;
+  }
+
+  /* Quote  */
+
+  .quote {
+    margin-bottom: 10rem;
+    padding: 5rem 2.5rem;
+  }
+
+  .quote .fa-quote-right {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .quote .cursive {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .quote .author {
+    font-size: 1.4rem;
+  }
+
+  /* Menu */
+
+  .menu .menu__intro .hr {
+    border: none;
+    border-bottom: 2px solid var(--light-brown-color);
+    width: 20%;
+    margin: 2.5rem auto;
+  }
+
+  .menu .menu__intro .cursive {
+    font-size: 1.6rem;
+  }
+
+  .menu .menu__intro .menu__title {
+    font-size: 2.5rem;
+  }
+
+  .menu .menu__intro {
+    margin-bottom: 2rem;
+  }
+
+  .menu .menu__coffee .all-coffees .coffee-sort .coffee-sort__name {
+    font-size: 1.8rem;
+  }
+
+  .menu .menu__coffee .all-coffees .coffee-sort .coffee-sort__description {
+    font-size: 1.4rem;
+  }
+
+  /* Sponser */
+
+  .sponser {
+    background: var(--sponser-color);
+    margin: 0 -4rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sponser .sponser-brand {
+    transition: all 0.3s ease;
+    width: 30%;
+    padding: 2rem 0;
+  }
+}
+
+/*  Media Query 665px */
+
+@media (max-width: 675px) {
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:first-child {
+    padding: 1rem 1rem 0 0;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:last-child {
+    padding: 1rem 0 0 1rem;
+  }
+}
+
+/*  Media Query 665px */
+
+@media (max-width: 620px) {
+  /* Secondary Header
+   */
+
+  .hero__div--secondary .slogan {
+    font-size: 3.8rem;
+    padding: 0 2rem;
+  }
+
+  .hero__div--secondary {
+    height: 70vh;
+  }
+
+  .hero__div--secondary .cursive {
+    font-size: 2rem;
+  }
+
+  .hero__div--secondary .btn__menu:link,
+  .hero__div--secondary .btn__menu:visited,
+  .hero__div--secondary .btn__menu {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .hero__div--secondary .hero__img {
+    margin-bottom: 3rem;
+    width: 25%;
+  }
+}
+
+/*  Media Query 580px */
+
+@media (max-width: 580px) {
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:first-child {
+    padding: 1rem 1rem 0 0;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:last-child {
+    padding: 1rem 0 0 1rem;
+  }
+}
+
+/*  Media Query 562px */
+
+@media (max-width: 562px) {
+  .hero__div--secondary .title {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero__div--secondary .cursive a:link,
+  .hero__div--secondary .curvise a:visited,
+  .hero__div--secondary .cursive a {
+    font-size: 2rem;
+  }
+
+  .hero__div--secondary .cursive {
+    font-size: 2rem;
+  }
+}
+
+/* Media Query 550px */
+
+@media (max-width: 550px) {
+  /* White Background */
+
+  .white__background {
+    background-color: var(--white-color);
+    width: 85%;
+    padding: 8rem 1rem;
+  }
+
+  /* Mini Info */
+
+  .container .food-div__card .food-div__images img,
+  .container .coffee-div__card .coffee-div__images img {
+    width: 40%;
+  }
+
+  /* Quote  */
+
+  .quote {
+    margin-bottom: 10rem;
+    padding: 5rem;
+  }
+
+  /* Menu */
+
+  .menu .menu__intro {
+    margin-bottom: 2rem;
+  }
+
+  .menu .menu__coffee .all-coffees .coffee-sort .coffee-sort__name {
+    font-size: 1.7rem;
+  }
+
+  .menu .menu__coffee .all-coffees .coffee-sort .coffee-sort__description {
+    font-size: 1.3rem;
+  }
+
+  /* Sponser */
+
+  .sponser {
+    background: var(--sponser-color);
+    margin: 0 -1rem -8rem -1rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sponser .sponser-brand {
+    transition: all 0.3s ease;
+    width: 35%;
+    padding: 2rem 0;
+  }
+
+  /* Grid Links - Process */
+
+  .grid-links .process {
+    padding: 5rem 2.5rem;
+  }
+
+  .grid-links .process .card__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Grid Links - About */
+
+  .grid-links .about {
+    padding: 5rem 2.5rem;
+  }
+
+  .grid-links .about .card__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Grid Links - Shop */
+
+  .grid-links .shop {
+    padding: 5rem 2.5rem;
+  }
+
+  .grid-links .shop .shop__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Grid Links - Reservation */
+
+  .grid-links .reservation {
+    padding: 5rem 2.5rem;
+  }
+
+  .grid-links .reservation .card__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid-links .card__link:link,
+  .grid-links .card__link:visited,
+  .grid-links .card__link {
+    font-size: 1.4rem;
+  }
+
+  .grid-links .about .card__link {
+    color: var(--dark-brown-color);
+  }
+}
+
+/*  Media Query 538px */
+
+@media (max-width: 538px) {
+  /* Header - Logo & Navigationbar */
+
+  .hero {
+    height: 90vh;
+  }
+
+  .hero__div--primary .logo a {
+    font-size: 2.5rem;
+  }
+
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    font-size: 1.4rem;
+  }
+
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:first-child {
+    padding: 1rem 1rem 0 0;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:last-child {
+    padding: 1rem 0 0 1rem;
+  }
+
+  /* Secondary Header
+   */
+
+  .hero__div--secondary .slogan {
+    font-size: 3.3rem;
+    padding: 0 2rem;
+  }
+
+  .hero__div--secondary {
+    height: 70vh;
+  }
+
+  .hero__div--secondary .cursive {
+    font-size: 2rem;
+    padding: 0 2rem;
+  }
+
+  .hero__div--secondary .btn__menu:link,
+  .hero__div--secondary .btn__menu:visited,
+  .hero__div--secondary .btn__menu {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .hero__div--secondary .hero__img {
+    margin-bottom: 3rem;
+    width: 30%;
+  }
+
+  .copyrights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #1f1e1e;
+    padding: 2rem 2rem 1.5rem 2rem;
+    align-items: center;
+  }
+
+  .copyrights .social {
+    margin: 1.5rem 0;
+  }
+}
+
+/*  Media Query 450px */
+
+@media (max-width: 450px) {
+  /* hero */
+
+  .hero {
+    height: 95vh;
+  }
+
+  /* Header - Logo & Navigationbar */
+
+  .hero .hero__div--primary {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__div--primary .logo a {
+    font-size: 2.5rem;
+  }
+
+  .hero__navigationbar .hero__navigation--list {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .hero__navigationbar .hero__navigation--list .hero__navigation--links {
+    padding: 0.3rem 0;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:first-child {
+    padding: 1rem 0 0.3rem 0;
+  }
+
+  .hero__navigationbar
+    .hero__navigation--list
+    .hero__navigation--links:last-child {
+    padding: 0.5rem 0 0 0rem;
+  }
+
+  /* Secondary Header
+   */
+
+  .hero__div--secondary .slogan {
+    font-size: 2.8rem;
+    padding: 0 2rem;
+  }
+
+  .hero__div--secondary {
+    height: 60vh;
+  }
+
+  .hero__div--secondary .cursive {
+    font-size: 1.6rem;
+    padding: 0 2rem;
+  }
+
+  .hero__div--secondary .btn__menu:link,
+  .hero__div--secondary .btn__menu:visited,
+  .hero__div--secondary .btn__menu {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .hero__div--secondary .hero__img {
+    margin-bottom: 3rem;
+    width: 40%;
+  }
+}
+
+/* Media Query 400px */
+
+@media (max-width: 400px) {
+  /* White Background */
+
+  .white__background {
+    background-color: var(--white-color);
+    width: 85%;
+    padding: 8rem 1rem;
+  }
+
+  /* Mini Info */
+
+  .mini-info .mini-info__intro .cursive {
+    font-size: 1.4rem;
+  }
+
+  .mini-info .mini-info__intro .mini-info__title {
+    font-size: 2.2rem;
+  }
+
+  .container .food-div__card .food-div__images img,
+  .container .coffee-div__card .coffee-div__images img {
+    width: 35%;
+  }
+
+  .container .coffee-div__card .coffee-div__images img {
+    margin-right: 2rem;
+  }
+
+  /* Grid Links - Process */
+
+  .grid-links .process {
+    padding: 5rem 1.5rem;
+  }
+
+  /* Grid Links - About */
+
+  .grid-links .about {
+    padding: 5rem 1.5rem;
+  }
+  /* Grid Links - Shop */
+
+  .grid-links .shop {
+    padding: 5rem 1.5rem;
+  }
+  /* Grid Links - Reservation */
+
+  .grid-links .reservation {
+    padding: 5rem 1.5rem;
+  }
+  .grid-links .card__link:link,
+  .grid-links .card__link:visited,
+  .grid-links .card__link {
+    font-size: 1.4rem;
+  }
+
+  .grid-links .about .card__link {
+    color: var(--dark-brown-color);
+  }
+
+  /* Quote  */
+
+  .quote {
+    margin-bottom: 10rem;
+    padding: 5rem 2rem;
+  }
+
+  /* Menu */
+
+  .menu .menu__coffee .all-coffees .coffee-sort {
+    display: flex;
+    margin: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .menu .menu__intro .cursive {
+    font-size: 1.4rem;
+  }
+
+  .menu .menu__intro .menu__title {
+    font-size: 2.2rem;
+  }
+
+  .menu .menu__intro {
+    margin-bottom: 2rem;
+  }
+
+  .menu .menu__coffee .all-coffees .coffee-sort .coffee-sort__name {
+    font-size: 1.6rem;
+  }
+
+  .menu .menu__coffee .all-coffees .coffee-sort .coffee-sort__description {
+    font-size: 1.3rem;
+  }
+
+  /* Sponser */
+
+  .sponser {
+    background: var(--sponser-color);
+    margin: 0 -1rem -8rem -1rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Grid Links - Process */
+
+  .grid-links .process {
+    padding: 5rem 2.5rem;
+  }
+
+  .grid-links .process .card__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Grid Links - About */
+
+  .grid-links .about {
+    padding: 5rem 2.5rem;
+  }
+
+  .grid-links .about .card__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Grid Links - Shop */
+
+  .grid-links .shop {
+    padding: 5rem 2.5rem;
+  }
+
+  .grid-links .shop .shop__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Grid Links - Reservation */
+
+  .grid-links .reservation {
+    padding: 5rem 2.5rem;
+  }
+
+  .grid-links .reservation .card__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid-links .card__link:link,
+  .grid-links .card__link:visited,
+  .grid-links .card__link {
+    font-size: 1.4rem;
+  }
+
+  .grid-links .about .card__link {
+    color: var(--dark-brown-color);
+  }
+}
