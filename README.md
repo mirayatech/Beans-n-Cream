@@ -7,3 +7,10 @@ The idea behind this project is every programmer loves to drik coffe, so i thoug
 ## What I learned 🧠
 - Heavely focused on the `design` of this webiste
 - Creating a lot's of diffrent `transitions` and working with the `transform` property
+
+## How it looks 🎥
+
+**Live:** https://beansncream.netlify.app/home/home
+
+https://user-images.githubusercontent.com/71933266/170868508-80d73d13-8243-41f8-8df1-5a7df96990be.mp4
+
